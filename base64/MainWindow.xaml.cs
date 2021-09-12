@@ -3,6 +3,7 @@ using System.Text;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Media;
+using System.Windows.Input;
 
 namespace base64
 {
@@ -18,12 +19,17 @@ namespace base64
          InitializeComponent();
       }
 
-      private void change_mode_Click(object sender, RoutedEventArgs e)
+      private void change()
       {
          input_txt.Text = "";
          output_txt.Text = "";
          mode.Content = current_mood ? "Encoding..." : "Decoding...";
          current_mood = !current_mood;
+      }
+
+      private void change_mode_Click(object sender, RoutedEventArgs e)
+      {
+         change();
       }
 
       private void input_txt_TextChanged(object sender, TextChangedEventArgs e)
@@ -50,6 +56,14 @@ namespace base64
                output_txt.BorderBrush = Brushes.Red;
                output_txt.Text = "`Error`";
             }
+         }
+      }
+
+      private void Window_KeyDown(object sender, KeyEventArgs e)
+      {
+         if (e.Key == Key.F1)
+         {
+            change();
          }
       }
    }

@@ -10,7 +10,7 @@
         MaxHeight="500"
         MaxWidth="700"
         Title="MainWindow" Height="450" Width="650" ResizeMode="CanMinimize">
-    <Grid Background="#002837">
+    <Grid Background="#002837" KeyDown="Window_KeyDown">
         <Grid.RowDefinitions>
             <RowDefinition Height="100"/>
             <RowDefinition Height="*"/>
