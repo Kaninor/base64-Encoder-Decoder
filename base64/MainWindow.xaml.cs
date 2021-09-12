@@ -40,12 +40,14 @@ namespace base64
             try
             {
                output_txt.Foreground = Brushes.Black;
+               output_txt.BorderBrush = Brushes.Gray;
                byte[] temp_backToBytes = Convert.FromBase64String(input_txt.Text);
                output_txt.Text = Encoding.UTF8.GetString(temp_backToBytes);
             }
             catch (Exception)
             {
                output_txt.Foreground = Brushes.Red;
+               output_txt.BorderBrush = Brushes.Red;
                output_txt.Text = "`Error`";
             }
          }
