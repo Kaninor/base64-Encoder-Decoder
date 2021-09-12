@@ -9,8 +9,7 @@
         MinWidth="650"
         MaxHeight="500"
         MaxWidth="700"
-        ResizeMode="CanMinimize"
-        Title="MainWindow" Height="450" Width="650">
+        Title="MainWindow" Height="450" Width="650" ResizeMode="CanMinimize">
     <Grid Background="#002837">
         <Grid.RowDefinitions>
             <RowDefinition Height="100"/>
@@ -20,7 +19,7 @@
         <Label Grid.Row="0" Foreground="White" HorizontalAlignment="Center" FontSize="65">BASE 64</Label>
         <StackPanel Grid.Row="1" Margin="0 20 0 0">
             <TextBox TextChanged="input_txt_TextChanged" Name="input_txt" Padding="6 0 0 0" Margin="50 20 50 0" Height="40" FontSize="28"></TextBox>
-            <Button Name="change_mode" Click="change_mode_Click" Margin="10 20 10 10" Width="240" Height="45" Background="Green" Foreground="White" FontSize="23">Change Mode</Button>
+            <Button Name="change_mode" Click="change_mode_Click" Margin="10 20 10 10" Width="240" Height="45" Background="Green" Foreground="White" FontSize="23" Cursor="Hand">Change Mode</Button>
             <Label Name="mode" Foreground="White" HorizontalAlignment="Center" FontSize="25" Margin="0 20 0 0">Encoding...</Label>
             <TextBox Name="output_txt" IsReadOnly="True" Padding="6 0 0 0" Margin="50 20 50 0" Height="40" FontSize="28"></TextBox>
         </StackPanel>
