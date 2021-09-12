@@ -61,9 +61,16 @@ namespace base64
 
       private void Window_KeyDown(object sender, KeyEventArgs e)
       {
-         if (e.Key == Key.F1)
+         switch (e.Key)
          {
-            change();
+            case Key.F1:
+               change();
+               break;
+            case Key.F2:
+               this.Close();
+               break;
+            default:
+               break;
          }
       }
    }
