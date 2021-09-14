@@ -73,5 +73,15 @@ namespace base64
                break;
          }
       }
+
+      private void footer_MouseEnter(object sender, MouseEventArgs e)
+      {
+         footer.Foreground = Brushes.DarkGray;
+      }
+
+      private void footer_MouseLeave(object sender, MouseEventArgs e)
+      {
+         footer.Foreground = Brushes.Gray;
+      }
    }
 }

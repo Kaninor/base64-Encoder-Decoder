@@ -9,7 +9,7 @@
         MinWidth="650"
         MaxHeight="500"
         MaxWidth="700"
-        Title="MainWindow" Height="450" Width="650" ResizeMode="CanMinimize">
+        Title="MainWindow" Height="455" Width="650" ResizeMode="CanMinimize">
     <Grid Background="#002837" KeyDown="Window_KeyDown">
         <Grid.RowDefinitions>
             <RowDefinition Height="100"/>
@@ -21,7 +21,8 @@
             <TextBox TextChanged="input_txt_TextChanged" Name="input_txt" Padding="6 0 0 0" Margin="50 20 50 0" Height="40" FontSize="28"></TextBox>
             <Button Name="change_mode" Click="change_mode_Click" Margin="10 20 10 10" Width="240" Height="45" Background="Green" Foreground="White" FontSize="23" Cursor="Hand">Change Mode</Button>
             <Label Name="mode" Foreground="White" HorizontalAlignment="Center" FontSize="25" Margin="0 20 0 0">Encoding...</Label>
-            <TextBox Name="output_txt" IsReadOnly="True" Padding="6 0 0 0" Margin="50 20 50 0" Height="40" FontSize="28"></TextBox>
+            <TextBox Name="output_txt" IsReadOnly="True" Padding="7 0 0 0" Margin="50 20 50 0" Height="40" FontSize="28"></TextBox>
+            <Label Name="footer" MouseEnter="footer_MouseEnter" MouseLeave="footer_MouseLeave" Foreground="Gray" FontWeight="UltraBold" FontSize="13" Margin="0 6 0 0">Ⓒ https://github.com/Kaninor</Label>
         </StackPanel>
     </Grid>
 </Window>
